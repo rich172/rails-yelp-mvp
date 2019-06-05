@@ -1,1 +1,6 @@
-index.html.erb
+<% @restaurants.each do |f| %>
+  <h2><%= f.name %></h2>
+  <p><%= f.address %></p>
+  <p><strong><%= f.category %></strong></p>
+<% end %>
+
